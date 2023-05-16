@@ -6,4 +6,8 @@
  mov ecx, lengthof num1
   mov eax,0
   mov ebx,0
-  
+ l1:
+  add eax,[edi+ebx]
+  add ebx,4
+  sub ecx,1
+  jnz l1
